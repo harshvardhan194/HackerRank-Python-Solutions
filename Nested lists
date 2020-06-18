@@ -1,0 +1,15 @@
+lst=[]
+marksheet=[]
+for _ in range(int(input())):
+    name = raw_input()
+    score = float(raw_input())
+    marksheet+=[[name,score]]
+    lst.append(score)
+
+b=sorted(list(set(lst)))[1]
+
+for n,s in sorted(marksheet):
+    if(s==b):
+        print(n)
+
+Thank You :)
