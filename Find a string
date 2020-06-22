@@ -1,0 +1,11 @@
+def count_substring(string, sub_string):
+    counter = 0
+    len_str = len(string)
+    len_sub = len(sub_string)
+    for i in range(0, len_str):
+        if string[i:i+len_sub] == sub_string:
+            counter += 1
+    return counter
+    
+    
+    Thank You :)
